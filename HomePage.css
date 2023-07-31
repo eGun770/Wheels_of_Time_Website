@@ -160,10 +160,10 @@ body {
   
   /**Footer section of the page**/
   
-  @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+  
   
   * {
-    font-family: Roboto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
   .footer-distributed{
@@ -197,14 +197,14 @@ body {
   
   /* The company logo */
   
-  .footer-distributed h3{
+  .footer-distributed h1{
       color:  #ffffff;
-      font: normal 36px 'Roboto', cursive;
+      font-size: 40px;
       margin: 0 0 10px;
   }
   
-  .footer-distributed h3 span{
-      color:  #5383d3;
+  .footer-distributed h1 span{
+      color:  #af0000;
   }
   
   /* Footer links */
