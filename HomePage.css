@@ -229,29 +229,43 @@ body {
       margin: 0;
   }
   
-  /* Footer social icons */
-  
-  .footer-distributed .footer-icons{
-      margin-top: 40px;
+
+  /*Social Icons*/
+
+  .fa {
+    padding: 5px;
+    width: 23px;
+    height: 22px;
+    text-align: center;
+    text-decoration: none;
+    margin: 8px 3px;
   }
   
-  .footer-distributed .footer-icons a{
-      display: inline-block;
-      width: 35px;
-      height: 35px;
-      cursor: pointer;
-      background-color: rgb(66, 63, 63);
-      border-radius: 2px;
-  
-      font-size: 20px;
-      color: #ffffff;
-      text-align: center;
-      line-height: 35px;
-  
-      margin-right: 3px;
-      margin-bottom: 5px;
+  .fa:hover {
+      opacity: 0.7;
   }
   
+  .fa-facebook {
+    color: #3B5998;
+  }
+  
+  .fa-twitter {
+    color: #1DA1F2;
+  }
+
+  .fa-instagram { 
+    color: #E1306C;
+  }
+
+  .fa-pinterest {
+    color: #cb2027;
+  }
+
+  .fa-youtube {
+    color: #ffffff;
+  }
+
+
   /* Footer Right */
   
   .footer-distributed .footer-right{
@@ -315,7 +329,7 @@ body {
   
   .footer-distributed form button{
       border-radius: 3px;
-      background-color:  aliceblue;
+      background-color:  rgb(255, 255, 255);
       color: #090909;
       border: 0;
       padding: 15px 50px;
