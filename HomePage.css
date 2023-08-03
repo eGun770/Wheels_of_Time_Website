@@ -6,7 +6,8 @@ body {
     padding: 0px;
     font-family: Arial, sans-serif;
     height: auto;
-    width: 1319px;
+    width: 1319.5px;
+    
   }  
    
     
@@ -43,7 +44,7 @@ body {
     nav li {
       display: inline-block;
       margin-right: 75px;
-      vertical-align: middle;
+      vertical-align: left;
     }
     
   
@@ -170,7 +171,7 @@ body {
       background: #363535;
       box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
       box-sizing: border-box;
-      width: 115.2%;
+      width: 115.1%;
       font: bold 16px sans-serif;
       text-align: left;
       padding: 50px 60px 40px;
@@ -246,7 +247,7 @@ body {
   }
   
   .fa-facebook {
-    color: #3B5998;
+    color: #4267B2;
   }
   
   .fa-twitter {
@@ -279,6 +280,7 @@ body {
       color: #ffffff;
   }
   
+
   /* The contact form */
   
   .footer-distributed form{
@@ -388,4 +390,110 @@ body {
       .footer-distributed form button{
           float: none;
       }
+  }
+
+
+
+  /*This section is Hamburger Menu*/
+
+  #sidebar {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 999;
+    max-width: 300px;
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    background-color: blanchedalmond;
+    box-shadow: 0 10px 20px -4px #000;
+    overflow-x: hidden;
+    overflow-y: auto;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: opacity 0.3s ease, visibility 0.2s ease, transform 0.3s ease;
+  }
+
+
+  
+  #sidebar.show {
+    pointer-events: all;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .sidebar_content {
+    padding: 2.8rem 0;
+    pointer-events: none;
+  }
+
+
+  .sidebar_content a {
+    pointer-events: all;
+  }
+
+
+  .side_navlinks ul {
+    display: grid;
+    gap: 2rem;
+  }
+
+
+  .side_navlinks li a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    color: #ff0000;
+  }
+
+
+  .side_navlinks a:hover {
+    opacity: 1;
+  }
+  
+  
+  
+  .sidebar_toggler {
+    position: fixed;
+    top: 4vh;
+    right: 3vw;
+    width: 1.75rem;
+    height: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+
+  .sidebar_toggler span {
+    background-color: #ffffff;
+    width: 100%;
+    height: 2.4px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+
+
+  #sidebar.show + .sidebar_toggler {
+    justify-content: center;
+  }
+  #sidebar.show + .sidebar_toggler span {
+    margin-top: -1.2px;
+    margin-bottom: -1.2px;
+  }
+  #sidebar.show + .sidebar_toggler span:first-child {
+    transform: rotate(45deg);
+  }
+  #sidebar.show + .sidebar_toggler span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  #sidebar.show + .sidebar_toggler span:last-child {
+    transform: rotate(-45deg);
   }
